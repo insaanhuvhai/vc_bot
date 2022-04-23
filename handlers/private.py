@@ -16,15 +16,15 @@ from config import BOT_NAME as bn, PLAY_PIC
 @Client.on_message(command("start") & other_filters2)
 async def start(_, message: Message):
     hell_pic = PLAY_PIC
-    hell = f"I am **{bn}** !!\nI let you play music in your group's voice chat 😉\nTo get all commands and their explanation do /help\n\nEnjoy Streaming Music 😉"
+    hell = f"I am **{bn}** !!\nI let you play music in your group's voice chat \nTo get all commands and their explanation do /help\n\nEnjoy Streaming Music 😉"
     butts = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "Group 💬", url="https://t.me/Its_Fuckin_Hell"
+                    "Akira Official", url="https://t.meAkiraUpdates/"
                 ),
                 InlineKeyboardButton(
-                    "Channel 📣", url="https://t.me/The_HellBot"
+                    "Support", url="https://t.me/TheBlue_Support"
                 )
             ]
         ]
@@ -36,30 +36,6 @@ async def start(_, message: Message):
 )
 
 
-@Client.on_message(command("repo") & other_filters2)
-async def repo(_, message: Message):
-    await message.reply_text(
-        f"""🤠 Hoi!!
-I'm **{bn}** and below is the my source code 🙃
-
-Happy Streaming 😉
-""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Repo 📑", url="https://github.com/TheVaders/vc_bot"
-                    ),
-                    InlineKeyboardButton(
-                        "Channel 📣", url="https://t.me/The_HellBot"
-                    ),
-                    InlineKeyboardButton (
-                        "Tutorial 🎬", url="https://youtu.be/XaH7VHURBVg"
-                    )
-                ]
-            ]
-        )
-    )
 
 
 @Client.on_message(command("ping") & other_filters)
@@ -68,7 +44,6 @@ async def ping(_, message: Message):
     await message.reply_photo(
     photo=hell_pic,
     caption="I'm Alive and working fine. Do /help to get commands.\n\nHappy Streaming Music 😉",
-)
 
 
 @Client.on_message(command("song") & other_filters2)
