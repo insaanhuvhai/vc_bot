@@ -15,8 +15,16 @@ from config import BOT_NAME as bn, PLAY_PIC
 
 @Client.on_message(command("start") & other_filters2)
 async def start(_, message: Message):
-    hell_pic = PLAY_PIC
-    hell = f"I am **{bn}** !!\nI let you play music in your group's voice chat \nTo get all commands and their explanation do /help\n\nEnjoy Streaming Music 😉"
+    hell_pic = https://te.legra.ph/file/2e9b860dfd7e1e0244b43.jpg
+    hell = f"━━━━━━━━━━━━━━━━━━
+ ʜᴇya !
+      ɪ ᴀᴍ ᴀᴋɪʀᴀ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ, ᴀ ʟᴀɢ ғʀᴇᴇ ᴍᴜsɪᴄ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴛᴏ  ᴘʟᴀʏ sᴏɴɢs ᴡɪᴛʜᴏᴜᴛ ᴇʀʀᴏʀ ᴀɴᴅ ʟᴀɢ. ᴀᴋɪʀᴀ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ɢɪᴠᴇs ʏᴏᴜ ᴇᴠᴇʀʏᴛʜɪɴɢ ʏᴏᴜ ʀᴇǫᴜɪʀᴇᴅ ᴀᴛ ʏᴏᴜʀ ᴘʟᴀᴄᴇ. ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ... 
+  ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ...ᴀɴᴅ ɢɪᴠᴇ ᴍᴇ ᴄᴏᴍᴍᴀɴᴅs...  ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ sᴏɴɢ ᴡɪᴛʜ ᴀ ɢᴀᴘ ᴏғ sᴇᴄᴏɴᴅs...  
+   
+      *ɴᴏᴛᴇ*- ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ 😌.
+
+
+━━━━━━━━━━━━━━━━━━"
     butts = InlineKeyboardMarkup(
         [
             [
@@ -54,7 +62,7 @@ async def a(client, message: Message):
         query += ' ' + str(i)
     okvai = query.capitalize()
     print(query.capitalize())
-    m = await message.reply(f"**{bn} :-** 🔍 Searching for {okvai}")
+    m = await message.reply(f"**{bn} :-**  Searching for {okvai}")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
