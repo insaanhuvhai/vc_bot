@@ -14,16 +14,16 @@ made with scratch__.
 
 
  **Users Commands :**
-🔥 /play - **[ Groups Only ]** > __Plays the replied audio file or YouTube video through link.__
-🔥 /song - **[ Groups & DM ]** > __Uploads the searched song in the chat.__
-🔥 /ytplay - **[ Groups Only ]** > __Plays the song directly from YouTube Search.__
+• /play - **[ Groups Only ]** > __Plays the replied audio file or YouTube video through link.__
+• /song - **[ Groups & DM ]** > __Uploads the searched song in the chat.__
+• /ytplay - **[ Groups Only ]** > __Plays the song directly from YouTube Search.__
 
 
  **Admin & Sudo Users Commands :**
-⚡ /pause - **[Groups Only ]** > __Pause Voice Chat Music.__
-⚡ /resume - **[Groups Only ]** > __Resume Voice Chat Music.__
-⚡ /skip - **[Groups Only ]** > __Skips the current Music Playing In Voice Chat.__
-⚡ /stop - **[Groups Only ]** > __Clears The Queue as well as ends Voice Chat Music.__""")
+• /pause - **[Groups Only ]** > __Pause Voice Chat Music.__
+• /resume - **[Groups Only ]** > __Resume Voice Chat Music.__
+• /skip - **[Groups Only ]** > __Skips the current Music Playing In Voice Chat.__
+• /stop - **[Groups Only ]** > __Clears The Queue as well as ends Voice Chat Music.__""")
 
 @Client.on_message(command("help") & other_filters)
 async def ghelp(_, message: Message):
