@@ -29,17 +29,7 @@ async def play(_, message: Message):
     sender_name = message.from_user.first_name
     hell_pic = PLAY_PIC
 
-    keyboard = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        text="🔊 Channel",
-                        url="https://t.me/The_HellBot")
-                   
-                ]
-            ]
-        )
-
+  
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
     url = get_url(message)
 
@@ -67,7 +57,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo=hell_pic,
         reply_markup=keyboard,
-        caption="▶️ Playing song... \n**Requested By :-** {}!".format(
+        caption=" Playing song... \n**Requested By :-** {}!".format(
         message.from_user.mention()
         ),
     )
@@ -78,7 +68,7 @@ async def play(_, message: Message):
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply(f"**{bn} :-** 🔎 Finding song...")
+    lel = await message.reply(f"**{bn} :-** Okay ! Searching your query...please wait...")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -89,7 +79,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit(f"**{bn} :-** 🎵 Processing {query}")
+    await lel.edit(f"**{bn} :-**  Processing {query}")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -138,7 +128,7 @@ async def play(_, message: Message):
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
 
     if audio:
-        await lel.edit_text(f"**{bn} :-** Hehe 🥴")
+        await lel.edit_text(f"**{bn} :-** Hehe ")
 
     elif url:
         file_path = await converter.convert(youtube.download(url))
