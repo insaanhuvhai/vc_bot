@@ -26,13 +26,16 @@ async def start(_, message: Message):
 
 ━━━━━━━━━━━━━━━━━━"
     butts = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
+        [  
+                [
+                    InlineKeyboardButton(
+                        " ➕ Add me To Your Group ➕", url=f"https://t.me/Akira_MusicBot?startgroup=true"
+                       ),
+                    InlineKeyboardButton(
                     "Akira Official", url="https://t.meAkiraUpdates/"
-                ),
-                InlineKeyboardButton(
-                    "Support", url="https://t.me/TheBlue_Support"
+                      ),
+                      InlineKeyboardButton(
+                    "Dev", url="https://t.me/AkHiL_SI"
                 )
             ]
         ]
@@ -42,7 +45,6 @@ async def start(_, message: Message):
     reply_markup=butts,
     caption=hell,
 )
-
 
 
 
