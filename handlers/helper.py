@@ -9,7 +9,7 @@ from helpers.filters import command, other_filters2, other_filters
 @Client.on_message(command("help") & other_filters2)
 async def helper(ok, message: Message):
     await message.reply_text(
-        f"""💞 Hello! Following are the commands available for **{bn}** - __I am fully lag free music player
+        f""" Hello! Following are the commands available for **{bn}** - __I am fully lag free music player
 made with scratch__.
 
 
