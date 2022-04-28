@@ -35,7 +35,7 @@ async def start(_, message: Message):
                     "Akira Official", url="https://t.meAkiraUpdates/"
                       ),
                       InlineKeyboardButton(
-                    "Dev", url="https://t.me/AkHiL_SI"
+                    "Creator", url="https://t.me/AkHiL_SI"
                 )
             ]
         ]
